@@ -1,0 +1,17 @@
+
+.content{
+ display: flex;
+ justify-content: center;   
+ background-color: rgb(46, 61, 74);
+}
+button{
+    border-radius: 10px;
+    border: 0 ;
+    background-color: rgb(251, 190, 116);
+    margin: 20px;
+    padding: 20px;
+}
+
+button:active{
+    background-color: rgb(249, 150, 29);
+}

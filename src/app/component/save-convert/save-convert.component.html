@@ -1,0 +1,22 @@
+<table>
+  <thead>
+    <tr>
+      <th>Celsius</th>
+      <th>Fahrenheit</th>
+      <th>Borrar</th>
+    </tr>
+  </thead>
+  <tbody>
+    @for (conversion of data; track conversion.celsius) {
+    <tr>
+      <td>{{ conversion.celsius }}</td>
+      <td>{{ conversion.fahrenheit }}</td>
+      <td>
+        <button (click)="Borrar(conversion)" (BorrarProducto)="(data)">
+          Borrar
+        </button>
+      </td>
+    </tr>
+    }
+  </tbody>
+</table>

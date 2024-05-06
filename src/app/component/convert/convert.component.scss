@@ -1,0 +1,51 @@
+.content{
+
+    .box-content{
+        display: flex;
+        justify-content: center;
+        margin: 20px;
+        padding: 20px;
+
+    }
+
+    .data-input{
+        display: flex;
+        flex-direction: column;
+        background-color: rgb(46, 61, 74);
+        margin: 20px;
+        padding: 20px;
+        border-radius: 10px;
+        color: aliceblue;
+    }
+
+    input{
+        border-radius: 10px;
+        border: 0;
+        height: 30px;
+        padding: 10px;
+        margin: 20px;
+
+    }
+    
+    select{
+        border-radius: 10px;
+        height: 60px;
+        padding: 10px;
+        margin: 20px;
+        border: 0;
+
+    }
+    button{
+        border-radius: 10px;
+        border: 0   ;
+        background-color: rgb(251, 190, 116);
+        margin-top: 130px;
+        margin-bottom: 130px;
+        
+    }
+    label{
+        color: aliceblue;
+    }
+
+    
+}

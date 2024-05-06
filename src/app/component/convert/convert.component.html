@@ -1,0 +1,32 @@
+<div class="content">
+  <div class="box-content">
+    <div class="data-input">
+      <label for="tipo-grados"> Grados</label>
+      <input
+        [formControl]="Cantidad"
+        type="number"
+        name="num-grados"
+        placeholder="Ingrese los Grados"
+        id="Cantida-grados"
+      />
+
+      <label for="tipo-grados"> Tipo</label>
+      <select
+        placeholder="Ingrese los Grados"
+        [formControl]="Tipo"
+        name="tipo-grados"
+        id="tipo-grados"
+      >
+        <option value="1">Celsius</option>
+        <option value="2">Farenheit</option>
+      </select>
+    </div>
+    <button (click)="Calcular()">Calcular</button>
+  </div>
+  <div class="data-input">
+    <app-save-convert
+      [data]="Calculos"
+      (BorrarProducto)="BorrarProducto($event)"
+    ></app-save-convert>
+  </div>
+</div>
