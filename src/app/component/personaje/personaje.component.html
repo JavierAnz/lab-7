@@ -1,0 +1,17 @@
+<div class="content">
+  <div id="show-personaje">
+    <select
+      [formControl]="selectedPersonaje"
+      name="select-personaje"
+      placeholder="Seleccione"
+    >
+      @for (per of personajes; track per.image) {
+      <option value="{{ per.image }}">{{ per.nombre }}</option>
+      }
+    </select>
+    <div id="select-p">
+      <button (click)="grabarPersonaje()">Mostrar</button>
+    </div>
+  </div>
+</div>
+<app-info></app-info>

@@ -37,9 +37,7 @@ export class ConvertComponent {
  
   }
 
-  BorrarProducto(data: conversion) {
-    console.log(data.celsius);
-    
+  BorrarProducto(data: conversion) { 
     this.Calculos = this.Calculos.filter(x => x.celsius != data.celsius)
 
   }
